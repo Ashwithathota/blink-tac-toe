@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blink Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Blink Tac Toe</h1>
+
+  <!-- Emoji Category Selection and Help -->
+  <div id="player-select">
+    <h2>Select Emoji Categories</h2>
+
+    <label>Player 1:
+      <select id="p1-category">
+        <option value="Faces">Faces 😀</option>
+        <option value="Reactions">Reactions 😡</option>
+        <option value="Animals">Animals 🐶</option>
+        <option value="Food">Food 🍕</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>Player 2:
+      <select id="p2-category">
+        <option value="Reactions">Reactions 😡</option>
+        <option value="Faces">Faces 😀</option>
+        <option value="Animals">Animals 🐶</option>
+        <option value="Food">Food 🍕</option>
+      </select>
+    </label>
+    <br><br>
+
+    <button id="start-game">Start Game</button>
+    <button id="toggle-help">Help</button>
+
+    <!-- Help Box -->
+    <div id="help-info">
+      <h3>📘 How to Play</h3>
+      <ul>
+        <li>2 players take turns placing emojis on a 3x3 grid.</li>
+        <li>Each selects a unique emoji category (faces, food, etc.).</li>
+        <li>Each player may have max 3 emojis on the board (vanishing rule).</li>
+        <li>Placing a 4th removes the oldest (FIFO logic).</li>
+        <li>Win by aligning 3 of your emojis in a row.</li>
+        <li>No draws – the board never fills up.</li>
+        <li>Scores track wins and rounds played.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game-area">
+    <div id="turn-indicator" class="player1">Player 1's Turn</div>
+    <div id="game-board"></div>
+    <div id="game-message"></div>
+    <button id="play-again">Play Again</button>
+    <div id="score-board">Player 1: 0 | Player 2: 0 | Rounds Played: 0</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
