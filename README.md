@@ -83,10 +83,9 @@ Each player must choose a **unique** category of emojis before the game begins:
    ```bash
    git clone https://github.com/Ashwithathota/blink-tac-toe.git
    ```
-2. Open `mainpage.html` in your browser.
+2. Open `index.html` in your browser.
 3. Make sure the following files exist in the root:
-   - `index
-   - .html`
+   - `index.html'
    - `style.css`
    - `script.js`
    - `place.mp3`, `win.mp3`, `next.mp3`
